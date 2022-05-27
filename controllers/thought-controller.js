@@ -19,7 +19,7 @@ const ThoughtController = {
   },
 
   // get one User by id
-  getThoughtsById({ params }, res) {
+  getThoughtById({ params }, res) {
     Thought.findOne({ _id: params.thoughtId })
     .populate({
       path: 'reactions',
