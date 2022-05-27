@@ -8,12 +8,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-butterfly', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/socialAPI', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
 
-// Log mongo queries
+// Use this to log mongo queries being executed!
 mongoose.set('debug', true);
 
 app.use(require('./routes'));
+
+app.listen(PORT, () => console.log(`🌍 Connected on localhost:${PORT}`));
