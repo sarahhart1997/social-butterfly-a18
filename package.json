@@ -1,0 +1,24 @@
+{
+  "name": "social-butterfly",
+  "version": "1.0.0",
+  "description": "An application that runs git/post functions for a social network in insomnia",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express":"4.18.1",
+    "mongoose":"6.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahhart1997/social-butterfly-a18.git"
+  },
+  "author": "Sarah Hart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahhart1997/social-butterfly-a18/issues"
+  },
+  "homepage": "https://github.com/sarahhart1997/social-butterfly-a18#readme"
+}
